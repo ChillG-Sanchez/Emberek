@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "/Users/csillagcsaba/Desktop/Petrikes/Asztali_Mariann/EmberekOOP/Asztali_Mariann.csproj": {}
+    "/Users/csillagcsaba/Desktop/Petrikes/Asztali_Mariann/EmberekOOP/EmberekOOP.csproj": {}
   },
   "projects": {
-    "/Users/csillagcsaba/Desktop/Petrikes/Asztali_Mariann/EmberekOOP/Asztali_Mariann.csproj": {
+    "/Users/csillagcsaba/Desktop/Petrikes/Asztali_Mariann/EmberekOOP/EmberekOOP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/csillagcsaba/Desktop/Petrikes/Asztali_Mariann/EmberekOOP/Asztali_Mariann.csproj",
-        "projectName": "Asztali_Mariann",
-        "projectPath": "/Users/csillagcsaba/Desktop/Petrikes/Asztali_Mariann/EmberekOOP/Asztali_Mariann.csproj",
+        "projectUniqueName": "/Users/csillagcsaba/Desktop/Petrikes/Asztali_Mariann/EmberekOOP/EmberekOOP.csproj",
+        "projectName": "EmberekOOP",
+        "projectPath": "/Users/csillagcsaba/Desktop/Petrikes/Asztali_Mariann/EmberekOOP/EmberekOOP.csproj",
         "packagesPath": "/Users/csillagcsaba/.nuget/packages/",
         "outputPath": "/Users/csillagcsaba/Desktop/Petrikes/Asztali_Mariann/EmberekOOP/obj/",
         "projectStyle": "PackageReference",

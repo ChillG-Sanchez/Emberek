@@ -1,0 +1,15 @@
+/Users/csillagcsaba/Desktop/Petrikes/Asztali_Mariann/EmberekOOP/bin/Debug/net7.0/EmberekOOP
+/Users/csillagcsaba/Desktop/Petrikes/Asztali_Mariann/EmberekOOP/bin/Debug/net7.0/EmberekOOP.deps.json
+/Users/csillagcsaba/Desktop/Petrikes/Asztali_Mariann/EmberekOOP/bin/Debug/net7.0/EmberekOOP.runtimeconfig.json
+/Users/csillagcsaba/Desktop/Petrikes/Asztali_Mariann/EmberekOOP/bin/Debug/net7.0/EmberekOOP.dll
+/Users/csillagcsaba/Desktop/Petrikes/Asztali_Mariann/EmberekOOP/bin/Debug/net7.0/EmberekOOP.pdb
+/Users/csillagcsaba/Desktop/Petrikes/Asztali_Mariann/EmberekOOP/obj/Debug/net7.0/EmberekOOP.csproj.AssemblyReference.cache
+/Users/csillagcsaba/Desktop/Petrikes/Asztali_Mariann/EmberekOOP/obj/Debug/net7.0/EmberekOOP.GeneratedMSBuildEditorConfig.editorconfig
+/Users/csillagcsaba/Desktop/Petrikes/Asztali_Mariann/EmberekOOP/obj/Debug/net7.0/EmberekOOP.AssemblyInfoInputs.cache
+/Users/csillagcsaba/Desktop/Petrikes/Asztali_Mariann/EmberekOOP/obj/Debug/net7.0/EmberekOOP.AssemblyInfo.cs
+/Users/csillagcsaba/Desktop/Petrikes/Asztali_Mariann/EmberekOOP/obj/Debug/net7.0/EmberekOOP.csproj.CoreCompileInputs.cache
+/Users/csillagcsaba/Desktop/Petrikes/Asztali_Mariann/EmberekOOP/obj/Debug/net7.0/EmberekOOP.dll
+/Users/csillagcsaba/Desktop/Petrikes/Asztali_Mariann/EmberekOOP/obj/Debug/net7.0/refint/EmberekOOP.dll
+/Users/csillagcsaba/Desktop/Petrikes/Asztali_Mariann/EmberekOOP/obj/Debug/net7.0/EmberekOOP.pdb
+/Users/csillagcsaba/Desktop/Petrikes/Asztali_Mariann/EmberekOOP/obj/Debug/net7.0/EmberekOOP.genruntimeconfig.cache
+/Users/csillagcsaba/Desktop/Petrikes/Asztali_Mariann/EmberekOOP/obj/Debug/net7.0/ref/EmberekOOP.dll

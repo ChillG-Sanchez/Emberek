@@ -1,38 +1,45 @@
 using System;
 
-public class Ember
+namespace EmberekOOP
 {
-    private string nev;
-    private string szulDatum;
-    private string szulHely;
-
-    public Ember(string nev, string szulDatum, string szulHely)
+    class Ember
     {
-        this.nev = nev;
-        this.szulDatum = szulDatum;
-        this.szulHely = szulHely;
-    }
+        private string nev;
+        private string szulDatum;
+        private string szulHely;
 
-    public string Nev
-    {
-        get { return nev; }
-        set { nev = value; }
-    }
+        public Ember(string nev, string szulDatum, string szulHely)
+        {
+            this.nev = nev;
+            this.szulDatum = szulDatum;
+            this.szulHely = szulHely;
+        }
 
-    public string SzulDatum
-    {
-        get { return szulDatum; }
-        set { szulDatum = value; }
-    } 
+        public int GetSzuletesiEv()
+        {
+            return int.Parse(szulDatum.Substring(0, 4));
+        }
 
-    public string SzulHely
-    {
-        get { return szulHely; }
-        set { szulHely = value; }
-    }
+        public int GetSzuletesiHonap()
+        {
+            string[] dateParts = szulDatum.Split('-');
+            return int.Parse(dateParts[1]);
+        }
 
-    public override string ToString()
-    {
-        return $"Név: {nev}\nSzületési dátum: {szulDatum}\nSzületési hely: {szulHely}";
+        public int GetSzuletesiNap()
+        {
+            return int.Parse(szulDatum.Split('-')[2]);
+        }
+
+        public int GetEletkor()
+        {
+            int currentYear = DateTime.Now.Year;
+            return currentYear - GetSzuletesiEv();
+        }
+
+        public override string ToString()
+        {
+            return $"Név: {nev}\nSzületési dátum: {szulDatum}\nSzületési hely: {szulHely}";
+        }
     }
 }
