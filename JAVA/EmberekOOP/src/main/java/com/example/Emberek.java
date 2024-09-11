@@ -9,7 +9,6 @@ import java.util.List;
 public class Emberek {
     private List<Ember> emberek;
 
-    // Konstruktor, amely konstans tömbök alapján feltölti a listát
     public Emberek() {
         emberek = new ArrayList<>();
         emberek.add(new Ember("Kovács János", "1990-01-01", "Budapest"));
@@ -19,7 +18,6 @@ public class Emberek {
         emberek.add(new Ember("Horváth Éva", "1995-07-25", "Pécs"));
     }
 
-    // Konstruktor, amely egy fájlból tölti be az adatokat
     public Emberek(String fajlNev) {
         emberek = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new FileReader(fajlNev))) {
@@ -35,7 +33,6 @@ public class Emberek {
         }
     }
 
-    // Metódus, amely megszámlálja a megadott hónapban született embereket
     public int szamolSzuletesHonap(int honap) {
         int szamlalo = 0;
         for (Ember ember : emberek) {
@@ -46,7 +43,6 @@ public class Emberek {
         return szamlalo;
     }
 
-    // Metódus, amely meghatározza az átlagos életkort
     public double atlagEletkor() {
         int osszesEletkor = 0;
         for (Ember ember : emberek) {
@@ -55,8 +51,6 @@ public class Emberek {
         return (double) osszesEletkor / emberek.size();
     }
 
-    // Metódus, amely kiszámítja az átlagos testtömeg indexet
-    // Feltételezzük, hogy az Ember osztály tartalmazza a testtömeg indexet
     public double atlagTti() {
         double osszesTti = 0;
         for (Ember ember : emberek) {
@@ -65,7 +59,6 @@ public class Emberek {
         return osszesTti / emberek.size();
     }
 
-    // Metódus, amely meghatározza a legfiatalabb ember nevét
     public String legfiatalabbNev() {
         Ember legfiatalabb = emberek.get(0);
         for (Ember ember : emberek) {
@@ -76,7 +69,6 @@ public class Emberek {
         return legfiatalabb.getNev();
     }
 
-    // Metódus, amely meghatározza a legidősebb ember sorszámát
     public int legidosebbSorszam() {
         int legidosebbIndex = 0;
         for (int i = 1; i < emberek.size(); i++) {
@@ -87,7 +79,6 @@ public class Emberek {
         return legidosebbIndex;
     }
 
-    // toString metódus, amely bejárja a teljes listát, és az abban található minden Ember objektum toStringjét egybefűzi, sortöréssel
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
