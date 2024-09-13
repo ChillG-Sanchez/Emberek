@@ -28,11 +28,4 @@ public class Program
 
         Console.WriteLine($"A legidősebb ember sorszáma: {emberek.GetOldestPersonIndex()}");
     }
-
-    // Metódus a random testtömeg index generálására
-    private static double GetRandomTestTomegIndex()
-    {
-        Random rand = new Random();
-        return rand.NextDouble() * (25.0 - 19.5) + 19.5;
-    }
 }

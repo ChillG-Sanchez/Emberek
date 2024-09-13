@@ -6,7 +6,6 @@ public class Emberek
 {
     private List<Ember> emberek;
 
-    // Konstruktor, amely konstans tömbök alapján feltölti a listát
     public Emberek()
     {
         emberek = new List<Ember>
@@ -19,7 +18,6 @@ public class Emberek
         };
     }
 
-    // Konstruktor, amely egy fájlból tölti be az adatokat
     public Emberek(string fajlNev)
     {
         emberek = new List<Ember>();
@@ -33,7 +31,7 @@ public class Emberek
                 {
                     emberek.Add(new Ember(adatok[0], adatok[1], adatok[2], double.Parse(adatok[3])));
                 }
-                else if (adatok.Length == 3) // Ha a testtömeg index hiányzik, adjunk hozzá egy alapértelmezett értéket
+                else if (adatok.Length == 3)
                 {
                     emberek.Add(new Ember(adatok[0], adatok[1], adatok[2], GetRandomTestTomegIndex()));
                 }
@@ -45,37 +43,31 @@ public class Emberek
         }
     }
 
-    // Metódus, amely megszámlálja a megadott hónapban született embereket
     public int CountByMonth(int honap)
     {
         return emberek.Count(e => e.GetSzuletesiHonap() == honap);
     }
 
-    // Metódus, amely meghatározza az átlagos életkort
     public double GetAverageAge()
     {
         return emberek.Average(e => e.GetEletkor());
     }
 
-    // Metódus, amely kiszámítja az átlagos testtömeg indexet
     public double AtlagTestTomegIndex()
     {
         return emberek.Average(e => e.GetTestTomegIndex());
     }
 
-    // Metódus, amely meghatározza a legfiatalabb ember nevét
     public string GetYoungestPerson()
     {
         return emberek.OrderBy(e => e.GetEletkor()).First().ToString();
     }
 
-    // Metódus, amely meghatározza a legidősebb ember sorszámát
     public int GetOldestPersonIndex()
     {
         return emberek.IndexOf(emberek.OrderByDescending(e => e.GetEletkor()).First());
     }
 
-    // ToString metódus, amely bejárja a teljes listát, és az abban található minden Ember objektum ToStringjét egybefűzi, sortöréssel
     public override string ToString()
     {
         string result = "";
@@ -86,7 +78,6 @@ public class Emberek
         return result;
     }
 
-    // Metódus a random testtömeg index generálására
     private double GetRandomTestTomegIndex()
     {
         Random rand = new Random();
