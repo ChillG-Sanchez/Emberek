@@ -1,45 +1,55 @@
 using System;
 
-namespace EmberekOOP
+public class Ember
 {
-    class Ember
+    private string nev;
+    private string szulDatum;
+    private string szulHely;
+    private double testTomegIndex;
+
+    // Paraméteres konstruktor
+    public Ember(string nev, string szulDatum, string szulHely, double testTomegIndex)
     {
-        private string nev;
-        private string szulDatum;
-        private string szulHely;
+        this.nev = nev;
+        this.szulDatum = szulDatum;
+        this.szulHely = szulHely;
+        this.testTomegIndex = testTomegIndex;
+    }
 
-        public Ember(string nev, string szulDatum, string szulHely)
-        {
-            this.nev = nev;
-            this.szulDatum = szulDatum;
-            this.szulHely = szulHely;
-        }
+    // Metódus a születési év visszaadására
+    public int GetSzuletesiEv()
+    {
+        return int.Parse(szulDatum.Split('-')[0]);
+    }
 
-        public int GetSzuletesiEv()
-        {
-            return int.Parse(szulDatum.Substring(0, 4));
-        }
+    // Metódus a születési hónap visszaadására
+    public int GetSzuletesiHonap()
+    {
+        return int.Parse(szulDatum.Split('-')[1]);
+    }
 
-        public int GetSzuletesiHonap()
-        {
-            string[] dateParts = szulDatum.Split('-');
-            return int.Parse(dateParts[1]);
-        }
+    // Metódus a születési nap visszaadására
+    public int GetSzuletesiNap()
+    {
+        return int.Parse(szulDatum.Split('-')[2]);
+    }
 
-        public int GetSzuletesiNap()
-        {
-            return int.Parse(szulDatum.Split('-')[2]);
-        }
+    // Metódus az életkor meghatározására
+    public int GetEletkor()
+    {
+        int currentYear = DateTime.Now.Year;
+        return currentYear - GetSzuletesiEv();
+    }
 
-        public int GetEletkor()
-        {
-            int currentYear = DateTime.Now.Year;
-            return currentYear - GetSzuletesiEv();
-        }
+    // Metódus a testtömeg index visszaadására
+    public double GetTestTomegIndex()
+    {
+        return testTomegIndex;
+    }
 
-        public override string ToString()
-        {
-            return $"Név: {nev}\nSzületési dátum: {szulDatum}\nSzületési hely: {szulHely}";
-        }
+    // Tagolt ToString metódus
+    public override string ToString()
+    {
+        return $"Név: {nev}\nSzületési dátum: {szulDatum}\nSzületési hely: {szulHely}\nTesttömeg index: {testTomegIndex:F2}";
     }
 }
